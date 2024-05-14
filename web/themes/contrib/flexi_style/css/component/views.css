@@ -1,0 +1,20 @@
+.flex-view img {
+  display: block;
+}
+.flex-view .views-field .views-label {
+  font-weight: 700;
+}
+.flex-view .flex-view-list ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.views-exposed-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.views-exposed-form > .form-item {
+  padding: 0 15px;
+  max-width: 100%;
+  flex-grow: 1;
+}

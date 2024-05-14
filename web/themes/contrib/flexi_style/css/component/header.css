@@ -1,0 +1,195 @@
+.btn-toggle {
+  display: none;
+}
+.btn-toggle.open {
+  cursor: pointer;
+  color: var(--primary_hover);
+}
+.btn-toggle .bars {
+  width: 24px;
+  height: 20px;
+  display: block;
+  position: relative;
+}
+.toggle-top.btn-toggle .bars {
+  width: 18px;
+  height: 14px;
+}
+.btn-toggle .bars .bar {
+  display: block;
+  border: 1px solid;
+}
+.btn-toggle .bars .bar:not(:last-child) {
+  margin-bottom: 6px;
+}
+.toggle-top.btn-toggle .bars .bar:not(:last-child) {
+  margin-bottom: 4px;
+}
+.btn-toggle.open .bars .bar:last-child {
+  display: none;
+}
+.btn-toggle.open .bars .bar {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 9px;
+  width: 100%;
+}
+.btn-toggle.open .bars .bar:first-child {
+  transform: rotate(45deg);
+}
+.flex-header {
+  width: 100%;
+  background: var(--white);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.sticky .flex-header {
+  position: sticky;
+}
+.toolbar-horizontal.sticky .flex-header {
+  top: 79px;
+}
+.flex-header .flex-site-logo {
+  display: block;
+  margin-bottom: 15px;
+}
+.flex-site-logo img {
+  max-height: 75px;
+}
+.flex-primary-menu {
+  padding-top: 15px;
+}
+.flex-primary-menu .region--header {
+  width: 25%;
+}
+.flex-primary-menu .primary-nav .region--search {
+  display: none;
+}
+.flex-primary-menu .primary-nav {
+  width: 75%;
+}
+.header-style-2.flex-primary-menu .primary-nav {
+  width: 100%;
+}
+.header-style-3 .btn-toggle {
+  display: block;
+}
+.header-style-3 .btn-toggle.open {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  color: inherit;
+  border: none;
+  padding: 5px 10px;
+}
+.header-style-3.flex-primary-menu .primary-nav {
+  width: 425px;
+  height: 100vh;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  opacity: 0;
+  visibility: hidden;
+  transition: right 0.5s linear;
+}
+.header-style-3 .primary-nav-mobile .search-block-form .form-item [type="search"] {
+  width: 310px;
+  margin-bottom: 15px;
+}
+body.toolbar-horizontal .header-style-3.flex-primary-menu .primary-nav {
+  top: 79px;
+}
+.header-style-3.flex-primary-menu .primary-nav.primary-nav-mobile {
+  visibility: visible;
+  opacity: 1;
+  right: 0;
+}
+.flex-primary-menu .primary-nav > .region {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.header-style-2.flex-primary-menu .primary-nav > .region,
+.header-style-3.flex-primary-menu .primary-nav > .region {
+  display: block;
+}
+.flex-primary-menu .flex-header-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+  .btn-toggle {
+    display: block;
+  }
+  .header-style-3 .btn-toggle.open {
+    position: relative;
+    right: 0;
+    padding: 0;
+  }
+  .header-style-3 .primary-nav-mobile .btn-toggle.open {
+    display: none;
+  }
+  .flex-header .flex-site-logo {
+    margin-bottom: 10px;
+  }
+  .flex-primary-menu {
+    padding-top: 10px;
+  }
+  .flex-header-right .region--search {
+    display: none;
+  }
+  .flex-primary-menu .primary-nav .region--search {
+    display: block;
+  }
+  .flex-primary-menu .primary-nav {
+    position: absolute;
+    top: -9999px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .flex-primary-menu .primary-nav-mobile {
+    top: 100%;
+    padding: 15px;
+    opacity: 1;
+    visibility: visible;
+    border-top: 5px solid var(--secondary);
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+  }
+  .flex-primary-menu .primary-nav > .region {
+    align-items: start;
+  }
+  .flex-primary-menu .primary-nav > .region .block {
+    width: 100%;
+  }
+  .header-style-3 .primary-nav-mobile .search-block-form .form-item [type="search"] {
+    width: 100%;
+  }
+  .header-style-3.flex-primary-menu .primary-nav.primary-nav-mobile {
+    position: relative;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .flex-site-logo img {
+    max-height: 45px;
+  }
+  .flex-primary-menu .region--header {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .flex-primary-menu .region--header {
+    width: 35%;
+  }
+}

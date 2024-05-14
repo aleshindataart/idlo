@@ -1,0 +1,50 @@
+.flex-secondary-menu p {
+  margin-bottom: 0;
+}
+.flex-secondary-menu .region--secondary-menu {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.flex-secondary-menu ul.menu li:not(:first-child) a::before {
+  content: "|";
+  color: var(--style_gray_100);
+  position: absolute;
+  left: -4px;
+}
+.flex-secondary-menu.bg-white ul.menu li:not(:first-child) a::before {
+  color: var(--primary);
+}
+.flex-secondary-menu.bg-light ul.menu li:not(:first-child) a::before,
+.flex-secondary-menu.bg-gray ul.menu li:not(:first-child) a::before {
+  color: var(--style_gray_800);
+}
+.flex-secondary-menu ul.menu > li:last-child .menu-link {
+  padding-right: 0;
+}
+@media screen and (max-width: 992px) {
+  .flex-secondary-menu .secondary-nav {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+  }
+  .flex-secondary-menu .secondary-nav-mobile {
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
+  .flex-secondary-menu .secondary-nav-mobile .region--secondary-menu {
+    display: block;
+  }
+  .flex-secondary-menu .secondary-nav-mobile .region--secondary-menu .block:not(:last-child) {
+    padding: 10px 0;
+    border-bottom: 1px dotted var(--style_gray_100);
+  }
+}
+@media screen and (max-width: 576px) {
+  .flex-secondary-menu ul.menu li {
+    display: inline-block;
+  }
+}

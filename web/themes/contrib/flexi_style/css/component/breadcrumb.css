@@ -1,0 +1,31 @@
+.breadcrumbs {
+  font-style: italic;
+  list-style: none;
+  padding: 0;
+}
+.breadcrumbs li {
+  display: inline-block;
+}
+.breadcrumbs li:not(:last-child) {
+  padding-right: 5px;
+}
+.breadcrumbs li:not(:last-child)::after {
+  content: "»";
+  margin-left: 2px;
+}
+.page-title {
+  font-size: 36px;
+}
+.page-title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: var(--primary);
+}
+
+@media screen and (max-width: 992px) {
+  .page-title {
+    font-size: 30px;
+  }
+}

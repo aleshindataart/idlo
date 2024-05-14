@@ -1,0 +1,137 @@
+.w-25 {
+  width: calc(100% / (4/1));
+}
+.w-50 {
+  width: calc(100% / (4/2));
+}
+.w-75 {
+  width: calc(100% / (4/3));
+}
+.w-100 {
+  width: calc(100% / (4/4));
+}
+.h-100 {
+  height: 100%;
+}
+.fs-row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.fs-no-row {
+  margin: 0;
+}
+.fs-no-row > .fs-col,
+.fs-no-row > [class*='fs-col-' i] {
+  padding: 0;
+}
+.fs-col,
+.fs-col-1,
+.fs-col-2,
+.fs-col-3,
+.fs-col-4,
+.fs-col-5,
+.fs-col-6,
+.fs-col-7,
+.fs-col-8,
+.fs-col-9,
+.fs-col-10,
+.fs-col-11,
+.fs-col-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.fs-col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.fs-col-1 {
+  flex: 0 0 calc(100% / (12/1));
+  max-width: calc(100% / (12/1));
+}
+
+.fs-col-2 {
+  flex: 0 0 calc(100% / (12/2));
+  max-width: calc(100% / (12/2));
+}
+.fs-col-3 {
+  flex: 0 0 calc(100% / (12/3));
+  max-width: calc(100% / (12/3));
+}
+.fs-col-4 {
+  flex: 0 0 calc(100% / (12/4));
+  max-width: calc(100% / (12/4));
+}
+.fs-col-5 {
+  flex: 0 0 calc(100% / (12/5));
+  max-width: calc(100% / (12/5));
+}
+.fs-col-6 {
+  flex: 0 0 calc(100% / (12/6));
+  max-width: calc(100% / (12/6));
+}
+.fs-col-7 {
+  flex: 0 0 calc(100% / (12/7));
+  max-width: calc(100% / (12/7));
+}
+.fs-col-8 {
+  flex: 0 0 calc(100% / (12/8));
+  max-width: calc(100% / (12/8));
+}
+.fs-col-9 {
+  flex: 0 0 calc(100% / (12/9));
+  max-width: calc(100% / (12/9));
+}
+.fs-col-10 {
+  flex: 0 0 calc(100% / (12/10));
+  max-width: calc(100% / (12/10));
+}
+.fs-col-11 {
+  flex: 0 0 calc(100% / (12/11));
+  max-width: calc(100% / (12/11));
+}
+.fs-col-12 {
+  flex: 0 0 calc(100% / (12/12));
+  max-width: calc(100% / (12/12));
+}
+@media screen and (max-width: 992px) {
+  .fs-col-3 {
+    flex: 0 0 calc(100% /(12 / 6));
+    max-width: calc(100% /(12 / 6));
+  }
+  .fs-col-9 {
+    flex: 0 0 calc(100% /(12 / 12));
+    max-width: calc(100% /(12 / 12));
+  }
+}
+@media screen and (max-width: 768px) {
+  .fs-col-4 {
+    flex: 0 0 calc(100% / (12/12));
+    max-width: calc(100% / (12/12));
+  }
+}
+@media screen and (max-width: 576px) {
+  .fs-col,
+  .fs-col-1,
+  .fs-col-2,
+  .fs-col-3,
+  .fs-col-4,
+  .fs-col-5,
+  .fs-col-6,
+  .fs-col-7,
+  .fs-col-8,
+  .fs-col-9,
+  .fs-col-10,
+  .fs-col-11,
+  .fs-col-12 {
+    flex: 0 0 calc(100% /(12 / 12));
+    max-width: calc(100% /(12 / 12));
+  }
+}

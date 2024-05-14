@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a single Drupal page while offline.
+ *
+ * All available variables are mirrored in page.html.twig.
+ * Some may be blank but they are provided for consistency.
+ *
+ * @see template_preprocess_maintenance_page()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="flex-maintainence-page">
+  <header class="m-top-5 m-bottom-5 text-center" role="banner">
+    <div class="container">
+      {% if logo %}
+        <a href="{{ front_page }}" title="{{ 'Home'|t }}" class="flex-site-logo" rel="home">
+          <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
+        </a>
+      {% else %}
+        {% if site_name or site_slogan %}
+          {% if site_name %}
+            <h1>
+              <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
+            </h1>
+          {% endif %}
+
+          {% if site_slogan %}
+            <div>{{ site_slogan }}</div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    </div>
+  </header>
+
+  <main role="main" class="flex-main text-center">
+    <div class="container">
+      <div class="fs-row">
+        <div class="fs-col-12">
+          {% if icons == 'fontawesome' %}
+            <i class="fa-10x fa-gear fa-solid fa-spin"></i>
+          {% elseif icons == 'google-material' %}
+            <span class="material-icons v-align-middle md-100">warning</span>
+          {% endif %}
+        </div>
+        <div class="fs-col-12">
+          {% if title %}
+            <h1 class="display-1">{{ title }}</h1>
+          {% endif %}
+          <div class="m-bottom-4">
+            {{ page.highlighted }}
+            {{ page.content }}
+          </div>
+        </div>
+      </div>
+      <div class="clearfix">
+        <h2 class="text-primary">We will be right back!</h2>
+        <div class="bg-gray border p-3 rounded shadow d-inline-block w-25">
+          <div class="date m-bottom-1">{{ "now"|date("d M Y") }}</div>
+          <div class="time fw-bold text-primary">{{ maintenance_mode_time }}</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

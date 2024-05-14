@@ -1,0 +1,34 @@
+flexi_style.extra_small:
+  label: mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+
+flexi_style.small:
+  label: mobile
+  mediaQuery: 'all and (max-width: 576px)'
+  weight: 1
+  multipliers:
+    - 1x
+
+flexi_style.medium:
+  label: narrow
+  mediaQuery: 'all and (max-width: 768px)'
+  weight: 2
+  multipliers:
+    - 1x
+
+flexi_style.large:
+  label: wide
+  mediaQuery: 'all and (max-width: 992px)'
+  weight: 3
+  multipliers:
+    - 1x
+
+flexi_style.extra_large:
+  label: wide
+  mediaQuery: 'all and (max-width: 1200px)'
+  weight: 4
+  multipliers:
+    - 1x

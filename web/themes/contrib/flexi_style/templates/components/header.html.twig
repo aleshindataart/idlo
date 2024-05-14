@@ -1,0 +1,161 @@
+{% if page.secondary_menu %}
+  {% set top_header_attribute = create_attribute() %}
+  {{ attach_library('flexi_style/top_header') }}
+{% endif %}
+{% set topHeaderClasses = [
+    'flex-secondary-menu',
+    top_header_bg,
+    top_header_classes,
+  ]
+%}
+{% if page.header %}
+  {% set header_nav_attribute = create_attribute() %}
+{% endif %}
+{% set headerClasses = [
+    'flex-header',
+    header_classes,
+  ]
+%}
+
+<header{{ attributes.setAttribute('id', 'header').setAttribute('role', 'banner').addClass(headerClasses) }}>
+  {% if page.secondary_menu %}
+    <div{{ top_header_attribute.addClass(topHeaderClasses) }}>
+      <div class="container">
+        <a href="#" role="button" class="btn-toggle toggle-top btn-link" href="#secondary-nav" data-target="toggle">
+          <span class="bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </span>
+        </a>
+        <div id="secondary-nav" class="secondary-nav">
+          {{ page.secondary_menu }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.header or page.primary_menu %}
+    {% if header_style == 'style-1' %}
+      <div class="flex-primary-menu header-style-1">
+        <div class="container">
+          <div class="flex-header-item">
+            {% if page.header %}
+              {{ page.header }}
+            {% endif %}
+            <div{{ header_nav_attribute.setAttribute('id', 'primary-nav').addClass('primary-nav', 'bg-white', header_style) }}>
+              {% if page.search %}
+                {{ page.search }}
+              {% endif %}
+              {% if page.primary_menu %}
+                {{ page.primary_menu }}
+              {% endif %}
+            </div>
+            {% if page.search or page.primary_menu %}
+              <button type="button" role="button" class="btn-toggle text-primary btn-link" href="#primary-nav" data-target="toggle">
+                {% if icons == 'fontawesome' %}
+                  <i class="fa-solid fa-bars fa-2x"></i>
+                {% elseif icons == 'google-material' %}
+                  <span class="material-icons md-36">menu_open</span>
+                {% else %}
+                  <span class="bars">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </span>
+                {% endif %}
+              </button>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% elseif header_style == 'style-2' %}
+      <div class="flex-primary-menu header-style-2">
+        <div class="container">
+          <div class="flex-header-item">
+            {% if page.header %}
+              {{ page.header }}
+            {% endif %}
+            {% if page.search or page.primary_menu %}
+              <div class="flex-header-right d-flex">
+                {% if page.search %}
+                  {{ page.search }}
+                {% endif %}
+                <button type="button" role="button" class="btn-toggle text-primary btn-link m-left-2" href="#primary-nav" data-target="toggle">
+                  {% if icons == 'fontawesome' %}
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                  {% elseif icons == 'google-material' %}
+                    <span class="material-icons md-36">menu_open</span>
+                  {% else %}
+                    <span class="bars">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                    </span>
+                  {% endif %}
+                </button>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+        <div{{ header_nav_attribute.addClass('primary-nav', header_style, header_navbar_bg).setAttribute('id', 'primary-nav') }}>
+          <div class="container">
+            {% if page.search %}
+              {{ page.search }}
+            {% endif %}
+            {{ page.primary_menu }}
+          </div>
+        </div>
+      </div>
+    {% elseif header_style == 'style-3' %}
+      <div class="flex-primary-menu header-style-3">
+        <div class="container">
+          <div class="flex-header-item">
+            {% if page.header %}
+              {{ page.header }}
+            {% endif %}
+            {% if page.search or page.primary_menu %}
+              <div class="flex-header-right d-flex">
+                {% if page.search %}
+                  {{ page.search }}
+                {% endif %}
+                <button type="button" role="button" class="btn-toggle text-primary btn-link m-left-2" title="Close" href="#primary-nav" data-target="toggle">
+                  {% if icons == 'fontawesome' %}
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                  {% elseif icons == 'google-material' %}
+                    <span class="material-icons md-36">menu_open</span>
+                  {% else %}
+                    <span class="bars">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                    </span>
+                  {% endif %}
+                </button>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+        <div{{ header_nav_attribute.addClass('primary-nav', header_style, header_navbar_bg).setAttribute('id', 'primary-nav') }}>
+          <button type="button" role="button" class="btn-toggle {{ header_navbar_bg }}" href="#primary-nav" data-target="toggle">
+            {% if icons == 'fontawesome' %}
+              <i class="fa-solid fa-close fa-2x"></i>
+            {% elseif icons == 'google-material' %}
+              <span class="material-icons md-36">close</span>
+            {% else %}
+              <span class="bars">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </span>
+            {% endif %}
+          </button>
+          {% if page.search %}
+            {{ page.search }}
+          {% endif %}
+          {{ page.primary_menu }}
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
+</header>

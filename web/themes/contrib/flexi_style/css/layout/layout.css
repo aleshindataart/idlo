@@ -1,0 +1,77 @@
+main.flex-main {
+  min-height: 300px;
+}
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-fluid {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.flex-error-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.flex-error-page .display-1 {
+  display: block;
+  font-size: 100px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 1180px;
+  }
+  .flex-maintainence-page .flex-row {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 992px;
+  }
+  .flex-maintainence-page .flex-row {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 768px;
+  }
+  .flex-maintainence-page .flex-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex-content {
+    order: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .w-25 {
+    width: calc(100% / 2);
+  }
+  .w-50 {
+    width: calc(100% / 1);
+  }
+  .flex-error-page {
+    width: 100%;
+  }
+  .flex-error-page .display-1 {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .flex-error-page .display-1 {
+    font-size: 60px;
+  }
+}

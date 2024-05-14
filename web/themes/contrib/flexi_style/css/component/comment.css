@@ -1,0 +1,21 @@
+.comment ul.links {
+  font-size: 14px;
+  list-style: none;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  background: var(--style_gray_100);
+}
+.comment ul.links li {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+.form.comment-form {
+  padding: 15px;
+  background: var(--style_gray_100);
+  border: 1px solid var(--style_gray_400);
+}
+.form.comment-form .form-actions,
+.flex-comment-section .comment .flex-comment ul.links {
+  margin-bottom: 0;
+}

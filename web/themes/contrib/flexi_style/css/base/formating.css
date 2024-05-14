@@ -1,0 +1,204 @@
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 24px;
+}
+h3,
+.h3 {
+  font-size: 18px;
+}
+h4,
+.h4 {
+  font-size: 16px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 11px;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 700;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 10px;
+}
+
+/* Fonts */
+.fw-light {
+  font-weight: 300;
+}
+.fw-normal {
+  font-weight: 400;
+}
+.fw-medium {
+  font-weight: 600;
+}
+.fw-bold,
+strong {
+  font-weight: 700;
+}
+.fs-small,
+.small {
+  font-size: 85%;
+}
+.fs-normal,
+.normal {
+  font-size: var(--font_size_base);
+}
+.font-size-14 {
+  font-size: 14px;
+}
+.font-size-16 {
+  font-size: 16px;
+}
+.font-size-18 {
+  font-size: 18px;
+}
+.font-size-20 {
+  font-size: 20px;
+}
+.font-style-normal {
+  font-style: normal;
+}
+.font-style-italic {
+  font-style: italic;
+}
+/* Display size */
+.display-1 {
+  font-size: 64px;
+}
+.display-2 {
+  font-size: 48px;
+}
+.display-3 {
+  font-size: 32px;
+}
+.display-4 {
+  font-size: 20px;
+}
+.display-1,
+.display-1,
+.display-3,
+.display-4 {
+  font-weight: 300;
+}
+
+/* Text alignment */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+/* Display property */
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-flex {
+  display: flex;
+}
+.d-inline {
+  display: inline;
+}
+.d-none {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.v-align-top {
+  vertical-align: top;
+}
+.v-align-bottom {
+  vertical-align: bottom;
+}
+.v-align-middle {
+  vertical-align: middle;
+}
+
+/* text transform property */
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+.text-transform-capitaliz {
+  text-transform: capitalize;
+}
+.text-transform-lowercase {
+  text-transform: lowercase;
+}
+.text-transform-none {
+  text-transform: none;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+  h1,
+  .h1 {
+    font-size: 32px;
+  }
+  h2,
+  .h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 992px) {
+  h1,
+  .h1 {
+    font-size: 28px;
+  }
+  h2,
+  .h2 {
+    font-size: 20px;
+  }
+  .display-1 {
+    font-size: 44px;
+  }
+  .display-2 {
+    font-size: 32px;
+  }
+  .display-3 {
+    font-size: 24px;
+  }
+}

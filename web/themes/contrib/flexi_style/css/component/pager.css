@@ -1,0 +1,10 @@
+.pager ul.pager-items {
+  font-size: 14px;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.pager ul.pager-items li {
+  padding: 0 5px;
+}

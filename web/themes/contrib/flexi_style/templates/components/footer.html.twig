@@ -1,0 +1,35 @@
+{% if page.footer %}
+  {% set footer_attribute = create_attribute() %}
+  {% set footer_bottom_attribute = create_attribute() %}
+{% endif %}
+{% set footerClasses = [
+    'flex-footer',
+    footer_bg,
+    footer_classes,
+  ]
+%}
+{% set footerBottomClasses = [
+    'flex-footer-bottom',
+    footer_bottom_bg,
+    footer_bottom_classes,
+  ]
+%}
+{% if page.footer %}
+  <footer{{ footer_attribute.setAttribute('id', 'footer').setAttribute('role', 'contentinfo').addClass(footerClasses) }}>
+    {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+      <div class="flex-footer-top py-4">
+        <div class="container">
+          {{ page.footer_first }}
+          {{ page.footer_second }}
+          {{ page.footer_third }}
+          {{ page.footer_fourth }}
+        </div>
+      </div>
+    {% endif %}
+    <div{{ footer_bottom_attribute.addClass(footerBottomClasses) }}>
+      <div class="container">
+        {{ page.footer }}
+      </div>
+    </div>
+  </footer>
+{% endif %}

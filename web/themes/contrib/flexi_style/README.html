@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Table of contents</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li>Introduction</li>
+<li>Requirements</li>
+<li>Installation</li>
+<li>Configuration</li>
+<li>Create subtheme</li>
+<li>Features</li>
+<li>Maintainers</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>FlexiStyle is a pure CSS-based Drupal base theme. This theme
+is fully compatible with Drupal 10. It is a dynamic and
+modern custom theme designed specifically for Drupal. Its
+theme completely overwrites standard root twig templates.
+This theme is based on custom and flex box-based CSS. This
+theme seamlessly integrates aesthetics with functionality,
+offering a visually striking and user-friendly.</p>
+<p>This theme is lightweight because we are attaching all the
+CSS and JS libraries based on the components and disabling
+unnecessary libraries. theme performance, best practices,
+and SEO scores are high in a lighthouse.</p>
+<p>The theme is fully responsive and mobile-first. In this
+theme, we have added the latest version of the font-awesome
+and Google material libraries for icons.</p>
+<p>&quot;Flexi Style&quot; theme settings are manageable, You can change
+the header, navbar, footer, and maintenance mode time
+settings and styles from the theme appearance. Flexi Style
+theme is fully supportable with Progressive web application
+(PWA).</p>
+<p><strong>Pre designed drupal core pages:</strong></p>
+<ul>
+<li>Error pages: 404 - page not found, 403 - Access Denied, Maintenance Page</li>
+<li>Search: Search result page</li>
+<li>Forums: Forums page, Forum topics page</li>
+<li>Comments: Listing of comments, comment form</li>
+<li>Forms: Contact form, Feedback form, Webforms</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<p>This theme requires Drupal core <code>&gt;= 9.0</code>.
+This theme does not require any theme and modules outside of Drupal core.</p>
+<h2 id="installation">Installation</h2>
+<p>Install as you would normally install a contributed Drupal theme.
+Install with composer <code>composer require 'drupal/flexi_style'</code>
+then enable the theme.</p>
+<h2 id="configuration">Configuration</h2>
+<p>Go to the Administration » Appearance.
+On the same page &quot;<strong>FlexiStyle</strong>&quot; theme and click on the
+install and set as default.</p>
+<h2 id="create-subtheme">Create subtheme</h2>
+<ol>
+<li>You can create a subtheme through a shell script.</li>
+<li>Install the &quot;<strong>FlexiStyle</strong>&quot; theme with the composer
+<code>composer require 'drupal/flexi_style'</code> but don't enable it.</li>
+<li>Go to the theme folder from shell or command prompt
+: <code>cd themes/contrib/flexi_style</code>.</li>
+<li>Run this command from the shell &quot;Make script executable&quot;
+: <code>chmod +x script/subtheme.sh</code>.</li>
+<li>Run this command from the shell to launch the script
+: <code>sh script/subtheme.sh</code> or <code>./script/subtheme.sh</code>.</li>
+<li>That script will ask the questions for you to create your subtheme.
+<ol>
+<li>The <code>machine name</code> of your custom theme? <code>[e.g. mytheme_flexistyle]</code>:
+<strong>mytheme_flexi_style</strong></li>
+<li>The <code>theme name</code> of your custom theme? <code>[e.g. Mytheme FlexiStyle]</code>:
+<strong>Mytheme FlexiStyle</strong></li>
+</ol>
+</li>
+<li>Go to the administration -&gt; <strong>Appearance</strong> and enable the
+<code>Mytheme FlexiStyle</code>.</li>
+</ol>
+<h2 id="features">Features</h2>
+<ul>
+<li>This theme is fully compatible with Drupal 10.</li>
+<li>User-defined column widths.</li>
+<li>Container and container-fluid (full width) layout.</li>
+<li>Flexbox CSS property for the layout and structure.</li>
+<li>The theme layout and structure are fully flexible.</li>
+<li>Easy to customize twigs and templates.</li>
+<li>Unique body classes are rendering based on the entities,
+users, roles, and header styles for the different UI.</li>
+<li>Global styling editor provided for instant changes on your
+page without modifying any CSS file from the server.</li>
+<li>Separate variable file for changing the sitewide theme color and sizes.</li>
+<li>Create a new Drupal custom theme with the subtheme folder.</li>
+<li>Completely overwrites standard root twig templates.</li>
+<li>Predefined Google Fonts.</li>
+<li>Predefined Fontawesome and Google material icons.</li>
+<li>Customize Header and footer custom classes.</li>
+<li>Multiple header styles are available.</li>
+<li>Header position changeable from UI.</li>
+<li>Change the header, navbar, footer, and maintenance mode time
+settings and styles from the theme appearance.</li>
+<li>This theme is based on atomic design patterns and classes.</li>
+<li>The theme follows the components-based twig and libraries.</li>
+<li>The theme follows mathematical functions in the CSS to
+manage the colors and sizes.</li>
+<li>The theme is Lightweight.</li>
+<li>The theme performance, best practices, and SEO scores
+are high in a lighthouse.</li>
+<li>The theme is fully support Progressive Web Apps (PWA).</li>
+<li>The theme is fully responsive and mobile-friendly.</li>
+<li>The theme is Cross-browser-compatible.</li>
+<li>Pre-designed error pages like 403 access denied, 404 page
+not found, and maintenance page.</li>
+<li>Dismissable alert messages.</li>
+<li>Use predefined classes for the perfect UI.</li>
+</ul>
+<h2 id="maintainers">Maintainers</h2>
+<ul>
+<li>Anoop Singh - <a href="https://www.drupal.org/u/anoopsingh92">anoopsingh92</a></li>
+</ul>
+
+            
+            
+        </body>
+        </html>

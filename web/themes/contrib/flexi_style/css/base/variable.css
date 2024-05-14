@@ -1,0 +1,65 @@
+:root {
+  /* Common Style */
+  --white: #fff;
+  --black: #000;
+  --primary: #066db2;
+  --primary_hover: #054e90;
+  --secondary: #d67132;
+  --secondary_hover: #c95d2e;
+  --font_size_base: 16px;
+  /* Red Style */
+  --style_red_50: #ffe7e6;
+  --style_red_100: #ffc7b8;
+  --style_red_200: #ffa28a;
+  --style_red_300: #ff795b;
+  --style_red_400: #ff5436;
+  --style_red_500: #ff200c;
+  --style_red_600: #ff1507;
+  --style_red_700: #ff0000;
+  --style_red_800: #f10000;
+  --style_red_900: #da0000;
+  /* Green Style */
+  --style_green_50: #ebf3e6;
+  --style_green_100: #d0e1c3;
+  --style_green_200: #b2ce9d;
+  --style_green_300: #95bd77;
+  --style_green_400: #81b05b;
+  --style_green_500: #6ea23f;
+  --style_green_600: #639437;
+  --style_green_700: #56832e;
+  --style_green_800: #4b7226;
+  --style_green_900: #355418;
+  /* Blue Style */
+  --style_blue_50: #e0f3fd;
+  --style_blue_100: #b1e1f9;
+  --style_blue_200: #7ecef5;
+  --style_blue_300: #4cbaef;
+  --style_blue_400: #28aced;
+  --style_blue_500: #069ee9;
+  --style_blue_600: #0790da;
+  --style_blue_700: #077ec6;
+  --style_blue_800: #066db2;
+  --style_blue_900: #054e90;
+  /* Orange Style */
+  --style_orange_50: #fcf2e3;
+  --style_orange_100: #f9deba;
+  --style_orange_200: #f5c98e;
+  --style_orange_300: #f1b464;
+  --style_orange_400: #eea44a;
+  --style_orange_500: #ea973d;
+  --style_orange_600: #e58c39;
+  --style_orange_700: #de7e35;
+  --style_orange_800: #d67132;
+  --style_orange_900: #c95d2e;
+  /* Gray Style */
+  --style_gray_50: #fafafa;
+  --style_gray_100: #f5f5f5;
+  --style_gray_200: #eeeeee;
+  --style_gray_300: #e0e0e0;
+  --style_gray_400: #bdbdbd;
+  --style_gray_500: #9e9e9e;
+  --style_gray_600: #757575;
+  --style_gray_700: #616161;
+  --style_gray_800: #424242;
+  --style_gray_900: #212121;
+}

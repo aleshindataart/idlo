@@ -1,0 +1,56 @@
+# Schema for the configuration files of the FlexiStyle theme.
+flexi_style.settings:
+  type: theme_settings
+  label: 'FlexiStyle settings'
+  mapping:
+    # Global Settings
+    global_style:
+      type: string
+      label: 'Global Styling'
+    fonts:
+      type: string
+      label: 'Fonts'
+    icons:
+      type: string
+      label: 'Icons'
+
+    # Top Header Settings
+    top_header_bg:
+      type: string
+      label: 'Top Header Background'
+    top_header_classes:
+      type: string
+      label: 'Top Header Classes'
+
+    # Header Settings
+    header_position:
+      type: string
+      label: 'Header Position'
+    header_style:
+      type: string
+      label: 'Header Layout'
+    header_navbar_bg:
+      type: string
+      label: 'Header Navbar Background'
+    header_classes:
+      type: string
+      label: 'Header Classes'
+
+    # Footer Settings
+    footer_bg:
+      type: string
+      label: 'Footer Background'
+    footer_classes:
+      type: string
+      label: 'Footer Classes'
+    footer_bottom_bg:
+      type: string
+      label: 'Footer Bottom Background'
+    footer_bottom_classes:
+      type: string
+      label: 'Footer Bottom Classes'
+
+    # Maintenance Mode Settings
+    maintenance_mode_time:
+      type: string
+      label: 'Maintenance Mode Time'

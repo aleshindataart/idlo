@@ -1,0 +1,5 @@
+.flex-sidebar .block {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: var(--style_gray_200);
+}

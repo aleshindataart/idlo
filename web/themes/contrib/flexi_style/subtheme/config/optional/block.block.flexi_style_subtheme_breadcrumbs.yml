@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - flexi_style_subtheme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: flexi_style_subtheme_breadcrumbs
+theme: flexi_style_subtheme
+region: breadcrumb
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

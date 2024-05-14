@@ -1,0 +1,75 @@
+input[type="submit" i],
+.button {
+  color: var(--white);
+  font-size: 15px;
+  margin: 0;
+  padding: 7px 18px;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  cursor: pointer;
+}
+input[type="submit" i]:hover,
+.button:hover,
+input[type="submit" i]:focus,
+.button:focus,
+input[type="submit" i]:active,
+.button:active {
+  color: var(--white);
+  background: var(--primary_hover);
+}
+.btn {
+  font-size: 15px;
+  margin: 0;
+  padding: 7px 18px;
+  cursor: pointer;
+}
+.btn.btn-primary {
+  color: var(--white);
+  background: var(--primary);
+  border: 1px solid var(--primary);
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  color: var(--white);
+  background: var(--primary_hover);
+  border: 1px solid var(--primary_hover);
+}
+.btn.btn-secondary {
+  color: var(--white);
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+.btn.btn-secondary:hover,
+.btn.btn-secondary:focus {
+  color: var(--white);
+  background: var(--secondary_hover);
+  border: 1px solid var(--secondary_hover);
+}
+.btn.btn-dark {
+  color: var(--white);
+  background: var(--style_gray_800);
+  border: 1px solid var(--style_gray_800);
+}
+.btn.btn-dark:hover,
+.btn.btn-dark:focus {
+  color: var(--white);
+  background: var(--style_gray_900);
+  border: 1px solid var(--style_gray_900);
+}
+.btn.btn-light {
+  color: var(--style_gray_800);
+  background: var(--style_gray_200);
+  border: 1px solid var(--style_gray_200);
+}
+.btn.btn-light:hover,
+.btn.btn-light:focus {
+  color: var(--style_gray_800);
+  background: var(--style_gray_300);
+  border: 1px solid var(--style_gray_300);
+}
+.btn-link {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

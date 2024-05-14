@@ -1,0 +1,29 @@
+# Default settings of FlexiStyle theme.
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+
+fonts: 'open-sans'
+icons: 'fontawesome'
+global_style: ''
+
+top_header_bg: 'bg-gray'
+top_header_classes: 'py-1'
+
+header_position: 'normal'
+header_style: 'style-1'
+header_navbar_bg: 'bg-white'
+header_classes: 'shadow'
+
+footer_bg: 'bg-dark'
+footer_classes: ''
+footer_bottom_bg: 'bg-black'
+footer_bottom_classes: 'py-3'
+
+maintenance_mode_time: '4-Hours'

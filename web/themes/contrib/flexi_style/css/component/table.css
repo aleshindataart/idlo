@@ -1,0 +1,35 @@
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+table {
+  font-size: 14px;
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+}
+table thead,
+table tbody,
+table tfoot {
+  display: table-row-group;
+}
+table tr {
+  display: table-row;
+}
+table tr td,
+table tr th {
+  padding: 10px;
+  border: 1px solid var(--style_gray_400);
+}
+table tr th {
+  font-weight: 700;
+  text-align: left;
+  border-bottom-width: 2px;
+  background: var(--style_gray_300);
+}
+table tbody tr:nth-child(even) {
+  background: var(--style_gray_100);
+}
+table tbody tr:hover {
+  background: var(--style_gray_50);
+}

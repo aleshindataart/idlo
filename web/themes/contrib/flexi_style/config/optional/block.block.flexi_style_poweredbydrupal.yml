@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - flexi_style
+_core:
+  default_config_hash: zpvaf-V-ruGpXuxZle1Sx-C3Vm3p1hPryEm7wHejE60
+id: flexi_style_poweredbydrupal
+theme: flexi_style
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

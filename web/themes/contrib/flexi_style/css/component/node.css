@@ -1,0 +1,30 @@
+.flex-article .field {
+  margin-bottom: 15px;
+}
+.flex-article ul.links {
+  font-size: 14px;
+  list-style: none;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  background: var(--style_gray_100);
+}
+.flex-article ul.links li {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+.flex-article-auth {
+  font-size: 14px;
+  font-style: italic;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: var(--style_gray_100);
+  border-bottom: 1px solid var(--style_gray_400);
+}
+.flex-article-auth .field {
+  margin-bottom: 0;
+}
+.flex-article-auth .flex-auth img {
+  width: auto;
+  max-height: 40px;
+}

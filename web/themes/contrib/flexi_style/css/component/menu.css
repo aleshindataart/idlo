@@ -1,0 +1,28 @@
+ul.menu {
+  padding: 0;
+  list-style: none;
+}
+ul.menu li {
+  margin-bottom: 0;
+  display: inline-block;
+  position: relative;
+}
+ul.menu li a {
+  padding: 5px 10px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+ul.contextual-links li {
+  display: block;
+}
+ul.links.inline li a {
+  display: inline-block;
+  padding: 2px 5px;
+}
+
+@media screen and (max-width: 576px) {
+  ul.menu li {
+    display: block;
+  }
+}

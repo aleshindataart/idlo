@@ -1,0 +1,18 @@
+{
+  "name": "flexi_style",
+  "private": true,
+  "description": "FlexiStyle theme is a visually dynamic and versatile design concept for user interfaces built using Flexbox.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CSS",
+    "User interface",
+    "Base theme",
+    "Drupal",
+    "Flexi Style",
+    "FlexiStyle",
+    "Drupal theme"
+  ],
+  "author": "@anoopsingh92"
+}

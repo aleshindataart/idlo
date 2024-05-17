@@ -13,11 +13,13 @@ global:
       css/component/footer.css: {}
       css/component/buttons.css: {}
       css/component/sidebar.css: {}
+      css/component/idlo.css: {}
     layout:
       css/layout/grid.css: {}
       css/layout/layout.css: {}
     theme:
       css/theme/print.css: { media: print }
+      css/theme/bootstrap.min.css: {}
   js:
     js/flexi-style.js: {}
   dependencies:

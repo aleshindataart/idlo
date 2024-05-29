@@ -1,0 +1,14 @@
+***************************** Content Import Begins ************************************ 
+ 
+ Data Type : body  Matches 
+Data Type : title  Matches 
+Data Type : langcode  Matches 
+********************************* Importing node ****************************  
+ 
+Importing Content (body) ::  Success 
+Importing Image () ::  Success 
+Importing Reference Type (taxonomy_term) ::  Success 
+Importing Content (title) ::  Success 
+Importing Content (author) ::  Success 
+********************* Node Imported successfully ********************* 
+

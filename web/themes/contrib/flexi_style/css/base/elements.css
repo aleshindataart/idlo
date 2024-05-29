@@ -204,8 +204,9 @@ details summary {
   background: var(--style_gray_200);
 }
 .bg-dark {
-  color: var(--white);
-  background: var(--style_gray_900);
+  color: var(--secondary_hover);
+  background: var(--secondary_hover);
+  background-color:#006695!important;
 }
 .bg-gray {
   color: var(--style_gray_900);

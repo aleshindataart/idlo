@@ -3,7 +3,7 @@
   list-style: none;
 }
 .flex-footer ul.menu li {
-  display: block;
+  display: inline-block;
 }
 .flex-footer ul.menu li a {
   display: block;

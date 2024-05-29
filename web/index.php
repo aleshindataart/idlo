@@ -1,4 +1,5 @@
 <?php
+die("I am index");
 
 /**
  * @file

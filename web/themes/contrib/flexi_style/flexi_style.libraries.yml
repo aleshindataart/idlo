@@ -13,6 +13,13 @@ global:
       css/component/footer.css: {}
       css/component/buttons.css: {}
       css/component/sidebar.css: {}
+      css/component/0.chunk.css: {}
+      css/component/9.chunk.css: {}
+      css/component/12.chunk.css: {}
+      css/component/17.chunk.css: {}
+      css/component/27.chunk.css: {}
+      css/component/29.chunk.css: {}
+      css/component/main.chunk.css: {}
       css/component/idlo.css: {}
     layout:
       css/layout/grid.css: {}

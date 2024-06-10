@@ -27,6 +27,7 @@ global:
     theme:
       css/theme/print.css: { media: print }
       css/theme/bootstrap.min.css: {}
+      css/theme/idlo_theme.css: {}
   js:
     js/flexi-style.js: {}
   dependencies:

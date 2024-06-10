@@ -1,0 +1,13 @@
+/* make these setting important */
+.h3, h3, h2, .h2, .h4, h4 {
+  margin-top: 0.5em !important;
+}
+
+.field li {
+  display: list-item !important;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+  list-style-type: disc;
+  padding-left: 16px;
+  margin: 16px;
+}

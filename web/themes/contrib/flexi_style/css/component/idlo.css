@@ -3242,9 +3242,9 @@ body.page-taxonomy-term ul.pager {
   background-color: #006695;
 }
 
-#zone-footer-2 {
-  border-top: 6px solid #66a3be;
-}
+/*#zone-footer-2 {*/
+/*  border-top: 6px solid #66a3be;*/
+/*}*/
 
 #region-footer-first {
   margin-left: 10px;

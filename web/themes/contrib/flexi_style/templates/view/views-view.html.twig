@@ -34,7 +34,6 @@
 #}
 
 {{ attach_library('flexi_style/views') }}
-
 {%
   set classes = [
     'flex-view',
@@ -58,12 +57,13 @@
     </div>
   {% endif %}
   {{ attachment_before }}
-
-  {% if rows -%}
-    {{ rows }}
-  {% elseif empty -%}
-    {{ empty }}
-  {% endif %}
+  <div class="flex-view-content">
+    {% if rows -%}
+      {{ rows }}
+    {% elseif empty -%}
+      {{ empty }}
+    {% endif %}
+  </div>
   {{ pager }}
 
   {{ attachment_after }}

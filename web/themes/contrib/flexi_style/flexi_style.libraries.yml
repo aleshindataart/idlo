@@ -83,7 +83,7 @@ node:
     component:
       css/component/node.css: {weight: -6 }
 
-# Fonts
+# Local Fonts
 helvetica:
   css:
     component:
@@ -94,6 +94,7 @@ verdana:
     component:
       fonts/verdana.css: {}
 
+# Google Fonts
 roboto:
   css:
     component:
@@ -118,7 +119,7 @@ open-sans:
       fonts/open-sans.css: {}
       //fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap: { type: external }
 
-# icons
+# Global Icons
 fontawesome:
   css:
     component:

@@ -1,0 +1,7 @@
+name: 'News Counter'
+type: module
+description: 'A module to display a count of a News content type nodes.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:block

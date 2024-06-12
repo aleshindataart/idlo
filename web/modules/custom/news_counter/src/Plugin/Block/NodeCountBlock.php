@@ -30,11 +30,16 @@ class NodeCountBlock extends BlockBase {
       ->execute();
 
     return [
-      '#markup' => $this->t('There are @count nodes of type @type.', [
-        '@count' => $count,
-        '@type' => $content_type,
-      ]),
+      '#theme' => 'node_count_block',
+      '#count' => $count,
+      '#type' => $content_type,
     ];
+//    return [
+//      '#markup' => $this->t('There are @count nodes of type @type.', [
+//        '@count' => $count,
+//        '@type' => $content_type,
+//      ]),
+//    ];
   }
 
   /**

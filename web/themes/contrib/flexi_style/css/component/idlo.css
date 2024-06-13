@@ -41,6 +41,63 @@ ul.menu.primary-menu.menu-level-1 > li > .menu-link {
   border: 0;
 }
 
+/* News view */
+.news-items-view .views-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin-bottom: 20px; /* Space between rows */
+}
+
+.news-items-view .views-row .views-field-field-image-news {
+  margin-right: 20px; /* Space between image and text */
+}
+
+.news-items-view .views-row .views-field-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.news-items-view .views-row .views-field-body {
+  font-size: 1em;
+  color: #333;
+}
+
+.news-items-view .views-row .views-field-body p {
+  margin: 0;
+}
+
+
+
+/* News rows */
+.views-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 1fr; /* Minimal height for the first row, remaining space for the second row */
+  gap: 10px; /* Optional: space between the columns */
+  height: 100vh; /* Optional: full height for demonstration */
+}
+
+.image-klop {
+  grid-column: 1; /* div1 in the first column */
+  grid-row: 1 / span 2; /* div1 takes both rows in the first column */
+}
+
+.title-klop, .views-field-body {
+  grid-column: 2; /* div2 and div3 in the second column */
+}
+
+.title-klop {
+  grid-row: 1; /* div2 in the first row of the second column */
+}
+
+.views-field-body {
+  grid-row: 2; /* div3 in the second row of the second column */
+}
+
+
+
 
 /*alpha-default-wide-12.css*/
 
